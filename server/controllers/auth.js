@@ -37,7 +37,9 @@ export const singin = async (req, res, next) => {
      const {password, ...others} = user._doc;
      res.cookie("access_token", token,{
         httpOnly: true
-     }).status(200).json(others)
+     }).status(200).send({
+      token ,others
+     })
     } catch (error) {
       //TODO 
       next(error);
