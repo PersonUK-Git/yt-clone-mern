@@ -16,7 +16,7 @@ const UserSchema = new mongoose.Schema({
         required: true,
        
     },
-    img: {
+    img: { 
         type: String,
     },
     subscribers:{
