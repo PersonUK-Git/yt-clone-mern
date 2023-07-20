@@ -38,7 +38,7 @@ app.use((err, req, res, next)=>{
 })
 
 
-app.listen(8000, ()=>{
+app.listen(8000  , '192.168.0.230' ,()=>{
     connect() 
     console.log(`connected to server : 8000`);
-})
+}) 
